@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+body {
+	font-family: "Inter", sans-serif;
+}
+.nav-con {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.25em 7em;
+	background: #3b5d50;
+}
+.to_fixed_nav {
+	position: fixed;
+	width: 100%;
+}
+.logo-con {
+	display: flex;
+	align-items: center;
+}
+.logo-con h1 {
+	font-size: 2rem;
+	color: #fff;
+}
+.harmburger {
+	display: none;
+}
+.bars {
+	height: 2px;
+	width: 25px;
+	background: #fff;
+	display: block;
+	border-radius: 5px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+.logo-con h1 > span {
+	color: #879c94;
+}
+.link_con {
+	display: flex;
+	align-items: center;
+	gap: 2.5em;
+}
+.link-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+}
+.link-wrap li a {
+	color: #879c94;
+	font-size: 1.1rem;
+	text-transform: capitalize;
+	padding: 7px;
+}
+.link-wrap li a:hover {
+	color: #fff;
+}
+.acct-con {
+	display: flex;
+	align-items: center;
+	gap: 2em;
+}
+.acct-con li a {
+	padding: 7px;
+}
+/* ---------------------------- HERO - SECTION ---------------------------- */
+.banner-con {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3.125em 0em 1em;
+	background: #3b5d50;
+	height: 80vh;
+}
+article {
+	width: 29%;
+}
+article h2 {
+	font-size: 2.1875rem;
+	line-height: 42px;
+	color: #fff;
+	margin-bottom: 1em;
+}
+article p {
+	font-size: 0.9rem;
+	line-height: 28px;
+	color: #879c94;
+	margin-bottom: 1.3125em;
+}
+article div {
+	margin-bottom: 14px;
+}
+article div button {
+	padding: 12px 30px;
+	font-size: 1rem;
+	font-weight: bolder;
+	text-transform: capitalize;
+	border-radius: 50px;
+	border: none;
+	outline: transparent;
+	background: #f9bf29;
+	cursor: pointer;
+}
+.btn1 {
+	background: transparent;
+	border: 1px solid #879c94;
+	color: #fff;
+	margin-left: 7px;
+}
+.couch-con {
+	display: flex;
+	position: relative;
+}
+.couch-con svg {
+	position: absolute;
+	top: 8em;
+	left: 42.5em;
+}
+.couch-con img{
+	z-index: 1;
+	position: relative;
+	top: 5em;
+	left: 5.5em;
+}
+/* ----------------------------- CRAFT - SECTION ---------------------------- */
+.craft-con{
+	padding:6.125em 7em ;
+	display: flex;
+	align-items: center;
+}
+article {
+	width: 25%;
+}
+article h3 {
+	font-size: 2.1875rem;
+	line-height: 42px;
+	color: #2F2F2F;
+	margin-bottom: 1em;
+}
+article button {
+	padding: 12px 30px;
+	font-size: 1rem;
+	font-weight: bolder;
+	text-transform: capitalize;
+	border-radius: 50px;
+	border: none;
+	outline: transparent;
+	background: #2F2F2F;
+	color: #fff;
+	cursor: pointer;
+}
+.craft-con div{
+	display: flex;
+	align-items: center;
+	flex: 1;
+	gap: 1.5em;
+}
+.craft-con div div img{
+	width: 70%;
+}
+
+
+
+
+/* ------------------------------ MEDIA - QUERIES ------------------------------ */
+@media (width <= 768px) {
+	.nav-con {
+		flex-direction: column;
+		padding: 1.25em 10.5px;
+		background: #3b5d50;
+	}
+	.logo-con {
+		width: 100%;
+		justify-content: space-between;
+	}
+	.harmburger {
+		display: block;
+	}
+	.link_con {
+		flex-direction: column;
+		background: #3b5d50;
+		position: absolute;
+		top: -50em;
+		left: 0;
+		width: 100%;
+		padding: 20px 10.5px;
+		align-items: baseline;
+	}
+	.show-menu {
+		top: 4.9em;
+	}
+	.link-wrap {
+		flex-direction: column;
+		align-items: baseline;
+		gap: 1.5em;
+	}
+}
