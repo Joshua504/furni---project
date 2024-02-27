@@ -7,6 +7,7 @@
 	text-decoration: none;
 }
 body {
+	background: #eff2f1;
 	font-family: "Inter", sans-serif;
 }
 .nav-con {
@@ -124,15 +125,15 @@ article div button {
 	top: 8em;
 	left: 42.5em;
 }
-.couch-con img{
+.couch-con img {
 	z-index: 1;
 	position: relative;
 	top: 5em;
 	left: 5.5em;
 }
 /* ----------------------------- CRAFT - SECTION ---------------------------- */
-.craft-con{
-	padding:6.125em 7em ;
+.craft-con {
+	padding: 8.125em 7em;
 	display: flex;
 	align-items: center;
 }
@@ -142,7 +143,7 @@ article {
 article h3 {
 	font-size: 2.1875rem;
 	line-height: 42px;
-	color: #2F2F2F;
+	color: #2f2f2f;
 	margin-bottom: 1em;
 }
 article button {
@@ -153,22 +154,59 @@ article button {
 	border-radius: 50px;
 	border: none;
 	outline: transparent;
-	background: #2F2F2F;
+	background: #2f2f2f;
 	color: #fff;
 	cursor: pointer;
 }
-.craft-con div{
+.craft-con div {
 	display: flex;
 	align-items: center;
 	flex: 1;
 	gap: 1.5em;
 }
-.craft-con div div img{
-	width: 70%;
+.craft-con div section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 10px;
+	cursor: pointer;
+	transition:all.5s linear;
 }
-
-
-
+.craft-con div section:hover{
+	background: #DCE5E4;
+}
+.craft-con div section img {
+	width: 80%;
+	position: relative;
+}
+.craft-con div section:hover img {
+	top: -5em;
+}
+.craft-con div section h4 {
+	font-size: 1.2rem;
+	text-transform: capitalize;
+	color: #2f2f2f;
+	margin-bottom: 7px;
+}
+.craft-con div section p {
+	font-size: 1.1rem;
+	font-weight: bolder;
+	color: #2f2f2f;
+	/* margin-bottom: 3.125em; */
+}
+.add-to {
+	padding: 10px;
+	background: #2f2f2f;
+	border-radius: 50px;
+	cursor: pointer;
+	position: relative;
+	top: 1.5em;
+	visibility: hidden;
+}
+.craft-con div section:hover .add-to{
+	visibility: visible;
+}
 
 /* ------------------------------ MEDIA - QUERIES ------------------------------ */
 @media (width <= 768px) {
@@ -176,6 +214,9 @@ article button {
 		flex-direction: column;
 		padding: 1.25em 10.5px;
 		background: #3b5d50;
+		position: fixed;
+		width: 100%;
+		z-index: 20;
 	}
 	.logo-con {
 		width: 100%;
@@ -202,4 +243,53 @@ article button {
 		align-items: baseline;
 		gap: 1.5em;
 	}
+	/* ----------------------------- HERO - SECTION ---------------------------- */
+	.banner-con{
+		flex-direction: column;
+		padding: 5em 15px 0; 
+	}
+	article {
+	width: 100%;
+}
+article h2 {
+	font-size: 25px;
+}
+.couch-con svg {
+	top: 0em;
+	left: 10.5em;
+	width: 50%;
+}
+.couch-con img {
+	top: 2em;
+	left: 0em;
+	width: 100%;
+}
+/* ----------------------------- CRAFT - SECTION ---------------------------- */
+.craft-con {
+	padding: 5em 15px;
+	flex-direction: column;
+	gap: 5em;
+}
+article {
+	width: 100%;
+}
+article h3 {
+	font-size: 22px;
+}
+.craft-con div {
+	flex-direction: column;
+	gap: 3.5em;
+}
+.craft-con div section:hover img {
+	top: 0em;
+}
+.add-to {
+	padding: 10px;
+	background: #2f2f2f;
+	border-radius: 50px;
+	cursor: pointer;
+	position: relative;
+	top: 1.5em;
+	visibility: visible;
+}
 }
